@@ -10,16 +10,16 @@ export default function Navbar() {
         </Link>
         <nav className="hidden md:flex items-center gap-8 font-medium text-gray-600">
           <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-          <Link href="#" className="hover:text-primary transition-colors">Services</Link>
-          <Link href="#" className="hover:text-primary transition-colors">Cities</Link>
-          <Link href="#" className="hover:text-primary transition-colors">About Us</Link>
-          <Link href="#" className="hover:text-primary transition-colors">Contact</Link>
+          <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
+          <Link href="/cities" className="hover:text-primary transition-colors">Cities</Link>
+          <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
+          <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
         </nav>
         <div className="flex items-center gap-4">
-          <a href="tel:+919876543210" className="hidden md:flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary-dark">
+          <Link href="/contact" className="hidden md:flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary-dark">
             <Phone size={18} />
             <span>24/7 Support</span>
-          </a>
+          </Link>
           <button className="flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-100 transition-all">
             <User size={18} />
             <span className="text-sm font-medium">Login</span>
