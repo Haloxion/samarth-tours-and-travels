@@ -50,7 +50,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-gray-900">Send us a Message</h2>
             </div>
             
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
@@ -72,7 +72,7 @@ export default function ContactPage() {
                 <textarea rows={5} placeholder="Write your message here..." className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"></textarea>
               </div>
 
-              <button className="bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-xl transition-colors w-full md:w-auto">
+              <button type="button" className="bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-xl transition-colors w-full md:w-auto">
                 Submit Message
               </button>
             </form>
